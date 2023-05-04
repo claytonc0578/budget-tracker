@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { AppContext } from "./context/BudgetContext"
+import { AppContext } from "../BudgetTracker/context/BudgetContext"
 
 export default function Remaining() {
     const { expenses, budget } = useContext(AppContext)
@@ -13,7 +13,8 @@ export default function Remaining() {
     return (
         <div className={`remaining bubble center
             ${isOverBudget ? "over-budget" : ""}`}>
-            <p className="bubble-text">Remaining: ${(budget - totalExpense).toFixed(2)}</p>
+            <p className="bubble-value">${(budget - totalExpense).toFixed(2)}</p>
+            <p className="bubble-text" style={{ marginLeft: "0.5rem"}}>Left</p>
         </div>
     )
 }

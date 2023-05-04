@@ -1,7 +1,7 @@
 import Budget from "./Budget";
 import ExpenseTotal from "./ExpenseTotal";
 import "../../../styles/RecentTransactions.css"
-import TransactionList from "../TransactionList";
+import RecentTransactionList from "./RecentTransactionList";
 
 export default function RecentTransactions() {
     return (
@@ -16,7 +16,7 @@ export default function RecentTransactions() {
                 <div className="see-all-button">See All</div>
             </div>
 
-            <TransactionList />
+            <RecentTransactionList />
         </div>
     )
 }

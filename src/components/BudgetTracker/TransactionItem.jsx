@@ -1,39 +1,30 @@
 import { faShoppingBag, faHome, faUtensils, faMoneyBill } from "@fortawesome/fontawesome-free-solid"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import typeColors from "../../assets/typeColors"
 
 export default function TransactionItem(props) {
-    let bgColor
-    let iconColor
     let icon
+    const colors = typeColors.find(obj => obj.type === props.type)
 
     switch (props.type) {
       case 'Housing':
-        bgColor = '#FCEED4'
-        iconColor = '#FCAC12'
         icon = <FontAwesomeIcon icon={faHome} />
         break
       case 'Subscription':
-        bgColor = '#EEE5FF'
-        iconColor = '#7F3DFF'
         icon = <FontAwesomeIcon icon={faMoneyBill} />
         break
       case 'Food':
-        bgColor = '#FDD5D7'
-        iconColor = '#FD3C4A'
         icon = <FontAwesomeIcon icon={faUtensils} />
         break
       case 'Personal':
-        bgColor = '#BDDCFF'
-        iconColor = '#0077FF'
         icon = <FontAwesomeIcon icon={faShoppingBag} />
         break
       default:
-        bgColor = 'white'
     }
     
     const styles = {
-        backgroundColor: bgColor,
-        color: iconColor,
+        backgroundColor: colors.lightColor,
+        color: colors.darkColor,
     }
 
     return (

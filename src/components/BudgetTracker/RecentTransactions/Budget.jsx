@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faArrowUp } from "@fortawesome/fontawesome-free-solid"
 
 export default function Budget() {
-    const {budget} = useContext(AppContext)
+    const { budget } = useContext(AppContext)
 
     return (
         <div className="budget bubble center">
