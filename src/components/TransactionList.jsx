@@ -1,7 +1,7 @@
 import { useContext } from "react";
+import "../styles/Transaction.css"
 import TransactionItem from "./TransactionItem";
 import { AppContext } from "./context/BudgetContext";
-import "../../styles/Transaction.css"
 
 export default function TransactionList() {
     const { expenses } = useContext(AppContext)
@@ -16,7 +16,7 @@ export default function TransactionList() {
                 type={expense.type}
                 cost={expense.cost}
             />
-            ))}
+            )).reverse()}
         </div>
     )
 }

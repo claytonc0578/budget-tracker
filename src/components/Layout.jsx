@@ -7,18 +7,20 @@ export default function Layout() {
     return (
         <>
             <nav className="layout">
-                <h1 className="layout-title">Budget Tracker</h1>
+                <Link to={"/"} className="layout-title">
+                    Budget Tracker
+                </Link>
 
                 <ul className="layout-list">
                     <li className="layout-list-item">
-                        <Link to="/"
-                            className="layout-link"
-                        >Dashboard</Link>
+                        <Link to="/" className="layout-link">
+                            Dashboard
+                        </Link>
                     </li>
                     <li className="layout-list-item">
-                        <Link to="/empty"
-                            className="layout-link"
-                        >Empty Link</Link>
+                        <Link to="/transactions" className="layout-link">
+                            Transactions
+                        </Link>
                     </li>
                 </ul>
             </nav>

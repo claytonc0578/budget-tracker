@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { AppContext } from "../context/BudgetContext"
+import { AppContext } from "./context/BudgetContext"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faArrowDown } from "@fortawesome/fontawesome-free-solid"
 

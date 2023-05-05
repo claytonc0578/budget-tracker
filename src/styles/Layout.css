@@ -3,7 +3,7 @@ nav {
     justify-content: space-between;
     align-items: center;
 
-    width: 100%;
+    width: clamp(700px, 100%, 10000px);
     padding: 1rem 5rem;
     color: #F5F5F5;
     background-color: #3EB489;
@@ -15,6 +15,8 @@ nav {
 .layout-title {
     font-size: 1.5rem;
     font-weight: 600;
+    text-decoration: none;
+    color: inherit;
 }
 
 .layout-list {
@@ -35,15 +37,15 @@ nav {
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     height: 64px;
 
     color: #FFFFFF;
-    background-color: #484848;
+    background-color: #767676;
 
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .copyright-icon {

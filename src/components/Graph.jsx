@@ -1,8 +1,8 @@
 import { useContext } from "react"
-import "../../styles/Graph.css"
-import { AppContext } from "../BudgetTracker/context/BudgetContext"
+import "../styles/Graph.css"
 import PieChart from "./PieChart"
 import BudgetBar from "./BudgetBar"
+import { AppContext } from "./context/BudgetContext"
 
 export default function Graph() {
     const { expenses } = useContext(AppContext)

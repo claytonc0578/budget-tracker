@@ -1,8 +1,11 @@
 import { faShoppingBag, faHome, faUtensils, faMoneyBill } from "@fortawesome/fontawesome-free-solid"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import typeColors from "../../assets/typeColors"
+import typeColors from "../assets/typeColors"
+import { useLocation } from "react-router-dom"
 
 export default function TransactionItem(props) {
+    const location = useLocation()
+
     let icon
     const colors = typeColors.find(obj => obj.type === props.type)
 
@@ -28,7 +31,11 @@ export default function TransactionItem(props) {
     }
 
     return (
-        <div className="transaction-item">
+        <div className={`transaction-item
+        ${location.pathname === "/transactions" ?
+            "wide" : ""
+        }
+        `}>
             <div className="transaction-item-container">
                 <div className="transaction-item-icon-container center"
                     style={styles}

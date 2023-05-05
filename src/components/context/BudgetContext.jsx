@@ -1,5 +1,5 @@
 import { createContext, useReducer, useEffect } from "react";
-import initialTransactions from "../../../assets/initialTransactions.js"
+import initialTransactions from "../../assets/initialTransactions.js"
 
 const AppReducer = (state, action) => {
     switch (action.type) {

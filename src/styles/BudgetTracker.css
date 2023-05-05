@@ -1,6 +1,6 @@
 .budget-tracker {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     /* border: 1px solid red; */
 }

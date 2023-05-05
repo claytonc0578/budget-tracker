@@ -1,15 +1,16 @@
 import { useContext } from "react";
-import TransactionItem from "../TransactionItem";
-import { AppContext } from "../context/BudgetContext";
-import "../../../styles/Transaction.css"
+import TransactionItem from "./TransactionItem";
+import { AppContext } from "./context/BudgetContext";
+import "../styles/Transaction.css"
 
-export default function TransactionList() {
+export default function RecentTransactionList() {
     const { expenses } = useContext(AppContext)
 
-    const recentTransactions = expenses.slice(-4)
+    // last 4 most recent transaction, most recent at the top/front
+    const recentTransactions = expenses.slice(-4).reverse()
 
     return (
-        <div className="transaction-list">
+        <div className="recent-transaction-list">
             {recentTransactions.map((expense) => (
             <TransactionItem 
                 key={expense.id}

@@ -1,8 +1,8 @@
-import { AppContext } from "../BudgetTracker/context/BudgetContext"
-import { useContext, useState } from "react"
+import { AppContext } from "./context/BudgetContext"
+import { useContext } from "react"
 import { Doughnut } from "react-chartjs-2"
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
-import typeColors from "../../assets/typeColors";
+import typeColors from "../assets/typeColors";
 
 export default function PieChart() {
     ChartJS.register(ArcElement, Tooltip, Legend);

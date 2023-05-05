@@ -2,11 +2,11 @@
     box-sizing: border-box;
     font-family: Source Sans Pro, sans-serif;
     margin: 0;
+    user-select: none;
 }
 
 body {
-    background-color: #F7F7F7;
-    /* background-color: #F5F5F5; */
+    background-color: #FFFFFF;
 }
 
 .bold {
@@ -14,13 +14,9 @@ body {
 }
 
 /* 
-    mint green A2E4B8, 3EB489
+    mint green 3EB489
 
-    lighter mint AAF0C1
-
-    dark mint 8FC9A3
-
-    neon mint 5FE88D
+    dark mint 429482
 
     pale mint 8AE3A8
 
@@ -36,9 +32,6 @@ body {
     Hof - dark gray replace black 
     484848
 
-    light pink for header back ground
-    FFF0F5
-
     Off white #F5F5F5
   } */
 
@@ -49,12 +42,12 @@ body {
 }
 
 .bubble {
-    width: 164px;
+    width: 150px;
     height: 80px;
     border-radius: 1.75rem;
-    padding: 1rem;
-    color: #FFFFFF;
-    background-color: #A2E4B8;
+    /* padding: 1rem 1.5rem; */
+    margin: 0.6rem 0.8rem;
+    color: #f5f5f5;
     box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -68,16 +61,8 @@ body {
     font-weight: 600;
 }
 
-.budget {
-    background-color: #00A86B;
-}
-
 .remaining {
     background-color: transparent;
-}
-
-.expense-total {
-    background-color: #FD3C4A;
 }
 
 .arrow-icon {

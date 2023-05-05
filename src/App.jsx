@@ -1,21 +1,23 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import BudgetTracker from './components/BudgetTracker/BudgetTracker'
 import Layout from './components/Layout'
-import Empty from './components/Empty'
+import BudgetTracker from './components/BudgetTracker';
+import Transactions from './components/Transactions';
+import { AppProvider } from './components/context/BudgetContext';
 
 function App() {
 
     return (
-        <BrowserRouter>
-            <Routes>
-                <Route path='/' element={<Layout />}>
-                    <Route index element={<BudgetTracker />} />
-                    <Route path='/empty' element={<Empty />} />
-
-                </Route>
-            </Routes>
-        </BrowserRouter>
+        <AppProvider>
+            <BrowserRouter>
+                <Routes>
+                    <Route path='/' element={<Layout />}>
+                        <Route index element={<BudgetTracker />} />
+                        <Route path='/transactions' element={<Transactions />} />
+                    </Route>
+                </Routes>
+            </BrowserRouter>
+        </AppProvider>
     )
 }
 
