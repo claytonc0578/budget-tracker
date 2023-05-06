@@ -1,6 +1,5 @@
 import BudgetBubble from "./BudgetBubble";
 import ExpenseTotalBubble from "./ExpenseTotalBubble";
-import "../styles/RecentTransactions.css"
 import RecentTransactionList from "./RecentTransactionList";
 import { useState } from "react";
 import AddExpenseForm from "./AddExpenseForm";

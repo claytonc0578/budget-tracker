@@ -1,22 +1,22 @@
 export default [
     {
-        type: "Housing",
-        lightColor: '#FCEED4',
-        darkColor: '#FCAC12',
+        type: "Housing", // mint
+        lightColor: '#c8e6e0',
+        darkColor: '#429482',
     },
     {
-        type: "Subscription",
-        lightColor: '#EEE5FF',
-        darkColor: '#7F3DFF',
+        type: "Subscription", // green
+        lightColor: '#cee6c8',
+        darkColor: '#549442',
     },
     {
-        type: "Food",
-        lightColor: '#FDD5D7',
-        darkColor: '#FD3C4A',
+        type: "Food", // purple
+        lightColor: '#d8bae0',
+        darkColor: '#824294',
     },
     {
-        type: "Personal",
-        lightColor: '#BDDCFF',
-        darkColor: '#0077FF',
+        type: "Personal", // red
+        lightColor: '#e6c8ce',
+        darkColor: '#944254',
     },
 ]

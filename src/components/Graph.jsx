@@ -1,5 +1,4 @@
 import { useContext } from "react"
-import "../styles/Graph.css"
 import PieChart from "./PieChart"
 import BudgetBar from "./BudgetBar"
 import { AppContext } from "./context/BudgetContext"
