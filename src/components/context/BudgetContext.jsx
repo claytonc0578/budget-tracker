@@ -21,17 +21,12 @@ const AppReducer = (state, action) => {
                 ...state,
                 expenses: updatedExpenses,
             }
-        case 'DELETE_EXPENSE':            
+        case 'DELETE_EXPENSE':
             return {
                 ...state,
                 expenses: state.expenses.filter(
                     (expense) => expense.id !== action.payload
                 ),
-            }
-        case 'SET_EXPENSES':
-            return {
-                ...state,
-                expenses: action.payload,
             }
         case 'UPDATE_BUDGET':
             return {
