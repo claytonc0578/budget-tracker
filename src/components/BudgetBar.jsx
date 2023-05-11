@@ -10,10 +10,12 @@ export default function BudgetBar() {
 
     const percentFilled = (totalSpending / budget) * 100
 
+    const overBudget = totalSpending > budget
+
     return (
         <div className="budget-bar-container">
 
-            <div className="budget-bar-left-container">
+            <div className={`budget-bar-left-container `}>
 
                 <p className="budget-bar-value">
                     ${budget - totalSpending}
@@ -26,10 +28,11 @@ export default function BudgetBar() {
             </div>
 
             <div className="budget-bar">
-                <div className="budget-bar-spent" style={{width: `${percentFilled}%`}}></div>
+                <div className="budget-bar-spent" 
+                style={{width: `${percentFilled}%`}}></div>
             </div>
 
-            <p className="budget-bar-text">
+            <p className={`budget-bar-text ${overBudget ? "over-budget" : ""}`}>
                 <span className="bold">${totalSpending}</span> of ${budget} spent
             </p>
 
